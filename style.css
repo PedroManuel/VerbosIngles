@@ -1,0 +1,88 @@
+body{
+    color:green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:small;
+}
+h2{
+    text-align:center;
+    
+}
+#cuerpoFormulario{
+    margin: auto;
+    width: 580px;
+    border: 3px solid green;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+#capaOpciones{
+    height: float;
+    padding-bottom: 30px;
+    background-color: rgb(3, 190, 3) ;
+    border-radius: 5px;
+    padding:10px;
+    color:white;
+    font-size:small;
+}
+
+
+
+#etiqueta{
+    display:inline-block;
+    width: 150px; 
+}
+#cabecera{
+    display:inline-block;
+    text-align: center;
+    color:#000000;
+    width: 130px;
+    margin:2px; 
+    font-weight: bold;
+}
+.textForm{
+    width:118px;
+
+}
+#textAyuda{
+    font-size:smaller;
+    display:inline-block;
+}
+div select{
+    margin-left: 10px;
+    font-size:smaller;
+    margin: 2px;
+    padding:2px;
+}
+div button{
+    margin: 2px;
+    padding:4px;
+    background-color: green;
+    color:white;
+    border-radius: 3px;
+
+}
+div input{
+    font-size:smaller;
+    margin: 2px;
+    padding:2px;  
+}
+#forgroup{
+    background-color: green;
+}
+div span input{
+    display: inline;
+    font-size:smaller;
+    margin: 2px;
+    padding:2px;
+}
+div span button{
+    display: inline;
+    width: 30px;
+    margin:1px;
+}
+#examList{
+    background-color: rgb(3, 190, 3);
+    padding:5px;
+    border-radius: 5px;
+    
+}

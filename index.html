@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Pedro M. Pérez M.">
+    <meta name="description" content="Aplicación que ayuda 
+                al aprendizaje de los verbos irregulares en inglés">
+    <!--meta rel="shortcut icon" href="favicon.ico" type="image/x-ico"-->
+    <link rel="stylesheet" href="style.css">
+    <script src="listverb.js"></script>
+    <script src="codeverb.js"></script>
+    <title>Ingl&eacute;s - Verbos irregulares</title>
+  </head>
+  <body>
+    <div id="cuerpoFormulario">
+        <h2>Verbos irregulares</h2>
+        <hr/>
+        <div id="capaOpciones">
+            <div><div id="etiqueta">Nº de preguntas:</div>
+                <select id="n_questions">
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="0" >Todas</option>
+                </select>
+            </div>
+            <div>
+                <div id="etiqueta">Tipo de aprendizaje:</div>
+                <select id="type_question">
+                    <option value="0" selected>Espa&ntilde;ol -> Ingl&eacute;s</option>
+                    <option value="1">Ingl&eacute;s -> Espa&ntilde;ol</option>
+                    <option value="2" >Aleatorio</option>
+                </select>
+            </div>
+            <div>
+                <div id="etiqueta">Ayuda:</div>
+                <select id="with_help">
+                    <option value="0" selected>No</option>
+                    <option value="1">Algunas letras</option>
+                    <option value="2">Nº repeticiones</option>
+                </select>
+            </div>
+            <div>
+                <div id="etiqueta">Aprendizaje por grupos:</div>
+                <input id="forgroup" type="checkbox" onchange="changePropertyForGroup();" checked>
+                <input type="text" id="numberGroup" value="1" style="width: 50px;">
+                <span id="lblMaxGrupos" ></span>
+
+            </div>
+            <button type="button" onclick="mostrarExamen();">Generar</button>
+
+
+        </div>
+        <br/>
+        <div id="examList"></div>
+        <br/>
+        <div id="palabrasCorrectas"></div>
+        <div id="resultadoFinal"></div>
+        <button type="button" id="btnResult" onclick="genResult()">Resultado</button>
+        <button type="button" onclick="verResultados()">Soluci&oacute;n</button>
+    </div>
+    
+
+</html>
